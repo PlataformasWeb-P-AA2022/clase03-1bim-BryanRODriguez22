@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Ejemplo 03</title>
+  </head>
+  <body>
+    <h1>Saludo</h1>
+    <p id="obtenerNombre"></p>
+    <p id="obtenerApellido"></p>
+    
+    <script type="text/javascript" charset="utf-8">
+      function nombre(name){ 
+        return"<h1>Nombres: " + name + "</h1>";
+      }
+
+      function lastName(apellidos){
+        return "<h2>Apellidos: " + apellidos + "</h2>";   
+      }
+      var entrada1 = window.prompt("Escriba su nombre: ", "Ej:Carlos Eduardo");
+      var entrada2 = window.prompt("Escriba su apellido: ", "Ej:Ramirez Torres");
+    
+      var c = nombre(entrada1);
+      var d = lastName(entrada2);
+      document.getElementById("obtenerNombre").innerHTML = nombre(entrada1);
+      document.getElementById("obtenerApellido").innerHTML = lastName(entrada2);
+    </script>
+  </body>
+</html>
